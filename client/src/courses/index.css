@@ -1,0 +1,57 @@
+.courses-header-1{
+    position: relative;
+    height: 50vh;
+    background-image: url('../assests/courseheader.jpg');
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.courses-header-1 h1{
+    font-size: 190px;
+}
+.all-course-1{
+    background: #060517;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.courses-1{
+    height: 70vh;
+    width: 80vh;
+    background: #16c5ff;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+}
+/* .courses-1::-webkit-scrollbar{
+    display: none;
+} */
+.course-container-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.course-container-1::-webkit-scrollbar{
+    display: none;
+}
+.en-card{
+    background: #060517;
+    color: white;
+    width: 130px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.course-icon{
+    font-size: 60px;
+    color: yellowgreen;
+}

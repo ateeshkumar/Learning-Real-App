@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+.home-container{
+    background-image: url('../../assests/header-bg.jpg');
+    /* background-size: cover; */
+    /* background: #030509; */
+}
+.h-header{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin: 0 50px;
+}
+.h-left h1{
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.btn{
+    text-decoration: none;
+    margin-top: 80px;
+    /* margin-left: 40px; */
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background: greenyellow;
+    
+}
+.h-right{
+        margin-right: 300px;
+
+        /* margin-top: 0px; */
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        overflow: hidden;
+        /* position: relative; */
+}
+.loader, .loader span{
+    width: 10em;
+    height: 10em;
+    border: 0.25em solid white;
+    font-size: 10px;
+    border-radius: 1em;
+    position: absolute;
+    mix-blend-mode: screen;
+}
+.loader{
+    background-color: gold;
+    animation: rotating 2s linear infinite;
+}
+@keyframes rotating{
+    to{
+        transform: rotate(1turn);
+    }
+}
+.loader span{
+    animation: de-rotating 4s linear infinite;
+}
+@keyframes de-rotating{
+    from,to{
+        transform: rotate(0deg) scale(0.5);
+    }
+    50%{
+        transform: rotate(-180deg) scale(1.2);
+    }
+}
+.loader span:nth-child(1) {
+    top: 5em;
+    left: 5em;
+    background-color: dodgerblue;
+}
+.loader span:nth-child(2){
+    top: -5em;
+    left: 5em;
+    background-color: hotpink;
+}
+.loader span:nth-child(3){
+    top: 5em;
+    left: -5em;
+    background-color: mediumpurple;
+}
+.loader span:nth-child(4){
+    top: -5em;
+    left: -5em;
+    background-color: lightgreen;
+}
+.h-overview{
+    background: #fff;
+    display: flex;
+    height: 80vh;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.ov-left{
+    margin: 0 20px;
+}
+.ov-right{
+    margin: 0 20px;
+
+}
+.ov-right h1{
+    font-size: 50px;
+}
+.ov-right p{
+    font-size: 20px;
+}
+
+.courses{
+    height: 90vh;
+    background: #16c5ff;
+    padding: 40px;
+}
+.courses h1{
+    font-size: 50px;
+    position: relative;
+}
+.course-gallery{
+    margin-top: 30px;
+    display: flex;
+    
+    /* position: relative; */
+
+}
+.course-gallery-con{
+    display: flex;
+    flex-direction: row;
+    width:max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 90vw;
+    /* position: relative; */
+    /* margin: 0 40px; */
+}
+.course-gallery-con::-webkit-scrollbar{
+    display: none;
+}
+.gallery-card{
+    height: 340px;
+    width: 250px;
+    background: black;
+    color:yellowgreen;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallery-card img{
+    height: 150px;
+    width: 250px;
+    border-radius: 5px 5px;
+}
+.gallery-card h3{
+    margin: 10px 0;
+}
+.gallery-card p{
+    color: #fff;
+}
+.course-gallery-arrow{
+    position: absolute;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+
+}
+.gallery-arrow-icon:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+.curriculum{
+    background: #060517;
+    color: #fff;
+}
+.inner-curriculum{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+.cu-upper{
+    margin:40px 0;
+}
+.cu-upper h1{
+    font-size: 50px;
+}
+.cu-upper p{
+    font-size: 20px;
+}
+.cu-mid{
+    margin:40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cumid-left span:active{
+    color: yellowgreen;
+}
+.cumid-left span{
+    border-bottom: 3px solid greenyellow;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #dadada;
+}
+.cumid-right button{
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background: greenyellow;
+}
+.cu-lower{
+    background: #16c5ff;
+    height: 90vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.companies{
+    background: #fff;
+    /* height: 90vh; */
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+.comp-left{
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 3;
+
+}
+.comp-img img{
+    height: 150px;
+    width: 200px;
+    margin: 20px;
+}
+.comp-right{
+    align-items: center;
+    padding-left: 30px;
+}
+.comp-right h1,h2{
+    font-size: 50px;
+}
+.comp-right h2{
+    color: greenyellow;
+}
+.comp-right p{
+    font-size: 20px;
+}
+.whychoosus{
+    background-image: url('../../assests/crystal.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+}
+.whychoosus h1{
+    font-size: 50px;
+    color: #fff;
+}
+.whychoosus h1 h2{
+    color: greenyellow;
+}
+.cu-lower h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+}
+.curr-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 200px;
+
+}
+.curr-source{
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    cursor: pointer;
+    background: #030509;
+
+}
+.curr-source:hover{
+    border: 2px solid yellowgreen;
+    color: yellowgreen;
+    transition:0.5s ease-out;
+
+}
+.cirti-img{
+    margin: 10px 0;
+    height: 100px;
+    width: 190px;
+}
+.curr-icon-block{
+    margin: 30px 0;
+    font-size: 40px;
+    /* width: 75px;
+    height: 75px; */
+    /* background: #fff; */
+    color: yellowgreen;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+.choose-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 300px;
+}
+.choose-card{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 20px;
+    width:220px;
+    height: 230px;
+    border-radius: 20px;
+}
+.ch-card-icon{
+    color: yellowgreen;
+    font-size: 50px;
+}
+.choose-card h4{
+    color: yellowgreen;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.choose-card p{
+    float: left;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:1165px) {
+    .h-header{
+        height: 40vh;
+    }
+    .ov-right p{
+        word-wrap:break-word;
+    }
+    .h-overview{
+        height: 50vh;
+    }
+    .courses{
+        height: 50vh;  
+    }
+    .cu-lower{
+        height: 50vh;
+    }
+    .whychoosus{
+        height: 60vh;
+    }
+    .choose-card-container{
+        margin: 0 230px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .h-right{
+        /* margin-left: 180px; */
+        /* align-items: end; */
+        justify-content: start;
+    }
+    .ov-left img{
+        height: 300px;
+        width: 400px;
+    }
+    .curr-card{
+        grid-template-columns: repeat(3,1fr);
+        grid-row: 3;
+    /* align-items: center; */
+        margin: 30px 100px;
+    }
+    .cu-lower{
+        height: 60vh;
+    }
+    .comp-img img{
+        height: 90px;
+        width: 140px;
+        margin: 10px;
+    }
+    .choose-card-container{
+        margin: 0 140px;
+    }
+}
+@media screen and (max-width:900px){
+    .choose-card-container{
+        margin: 0 40px;
+    }
+}
+@media screen and (max-width:787px) {
+    .h-header{
+        flex-direction: column;
+    }
+    .h-overview{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

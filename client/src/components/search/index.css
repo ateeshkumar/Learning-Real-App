@@ -1,0 +1,28 @@
+.s-input{
+    border: 2px solid greenyellow;
+    width: 400px;
+    height: 50px;
+    border-radius: 6px;
+}
+.s-input input{
+    border: none;
+    /* display: block; */
+    background: transparent;
+    width: 350px;
+    height: 36px;
+    /* z-index: -1; */
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+    color: #fff;
+}
+.s-submit{
+    background: none;
+    font-size: 20px;
+    border: none;
+    padding-top: 10px;
+    color: greenyellow;
+    cursor: pointer;
+    display: inline;
+}

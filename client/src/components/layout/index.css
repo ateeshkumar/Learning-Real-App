@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex: 0 1 auto; */
+    overflow-x: hidden;
+}
+.left{
+    background-color: black;
+    width: 30%;
+}
+.mid{
+    width: 80%;
+    border:  1px solid black;
+}

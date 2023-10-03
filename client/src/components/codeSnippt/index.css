@@ -1,0 +1,28 @@
+.codesnippt{
+    border-radius: 15px;
+    /* background: red; */
+}
+.codesnippt-upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: white;
+    padding: 0 20px;
+}
+.code-copy-container button{
+    background-color: none;
+    
+}
+.code-copy{
+    text-align: center;
+    
+    box-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+}
+.code-copy div{
+    display: flex;
+    align-items: center;
+}
